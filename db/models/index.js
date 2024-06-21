@@ -37,7 +37,22 @@ Object.keys(db).forEach(modelName => {
   }
 });
 
+//agrege esto para verificar la conneccion desde el front
+// Función para verificar la conexión a la base de datos
+async function checkDatabaseConnection() {
+  try {
+    await Sequelize.authenticate();
+    console.log('Conexión a la base de datos establecida correctamente.');
+    return true;
+  } catch (error) {
+    console.error('Error de conexión a la base  (intenta autenticar) de datos:', error);
+    return false;
+  }
+}
+// seccion testconeccion ---fin --------------------------------
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
+db.checkDatabaseConnection = checkDatabaseConnection; // Exporta la función de verificación de conexión
+//console.log (db);//  para ver si realmente se guardo en db y si se guardo...
 module.exports = db;

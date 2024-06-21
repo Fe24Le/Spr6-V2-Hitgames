@@ -471,27 +471,31 @@ nav ul li a:hover{
 footer{
     background: #151515;
     padding: 80px 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 footer .foo-row{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;/* space-between;*/
+    font-family: 'Poppins', sans-serif;
 }
 
 footer .foo-row .foo-col{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
     width: 50%;
 }
 
-footer .foo-row .foo-col:last-child{
-    margin-left: 50px;
-}
-
 footer .foo-row .foo-col:first-child{
-    margin-right: 50px;
+    margin-right: 0px;
+}
+footer .foo-row .foo-col:last-child{
+    margin-left: 0px;
 }
 
 footer .foo-row .foo-col h2{
-    color: #E3E3E3;
+    color: var(--color-negro);
     line-height: 40px;
 
     font-size: 33px;
@@ -514,7 +518,7 @@ footer form .f-input input{
     font-size: 15px;
     border-radius: 25px;
     outline: 0;
-    color: #A7A1A1;
+    color: var(--color-negro);
 }
 
 footer form .f-input .hm-btn-round{
@@ -533,7 +537,7 @@ footer form .f-input .hm-btn-round{
 footer .foo-row .foo-col ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;/* space-between*/
     flex-wrap: wrap;
 }
 
@@ -543,8 +547,9 @@ footer .foo-row .foo-col ul li{
 }
 
 footer .foo-row .foo-col ul li a{
-    color: #E3E3E3;
+    color: var(--color-negro);
     font-size: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 footer .foo-row .foo-col ul li a:hover{
@@ -554,17 +559,19 @@ footer .foo-row .foo-col ul li a:hover{
 
 
 .foo-copy{
-    background: #000000;
+    background: #B7A5A1 ;
     padding: 40px 0px;
+    color: var(--color-principal);
+  
 }
 
 .foo-copy p{
     text-align: center;
-    color: #E3E3E3;
+    color: var(--color-negro);
     font-size: 14px;
     font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
-
 
 
 /*=================================
